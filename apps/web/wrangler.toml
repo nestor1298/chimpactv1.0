@@ -14,8 +14,8 @@ not_found_handling = "single-page-application"
 # binding = "WAITLIST"
 # id = "<id from the command above>"
 
-# Serve on the apex domain (chimpact.org must be a zone in this Cloudflare account). Uncomment to enable.
-# routes = [
-#   { pattern = "chimpact.org", custom_domain = true },
-#   { pattern = "www.chimpact.org", custom_domain = true }
-# ]
+# Served on chimpact.org and www.chimpact.org (zone in this Cloudflare account).
+routes = [
+  { pattern = "chimpact.org", custom_domain = true },
+  { pattern = "www.chimpact.org", custom_domain = true }
+]
