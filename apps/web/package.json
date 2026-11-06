@@ -1,0 +1,15 @@
+{
+  "name": "chimpact-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview", "deploy": "vite build && wrangler deploy" },
+  "dependencies": {
+    "@fontsource/montserrat": "5.1.0",
+    "@fontsource/source-sans-3": "5.1.0",
+    "gsap": "3.12.5",
+    "lenis": "1.1.13",
+    "three": "0.169.0"
+  },
+  "devDependencies": { "vite": "5.4.10", "wrangler": "3.84.1" }
+}

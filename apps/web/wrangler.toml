@@ -1,0 +1,21 @@
+# chimpact.org on Cloudflare Workers (static assets + one API route)
+name = "chimpact-site"
+main = "worker/index.js"
+compatibility_date = "2024-11-01"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+# Waitlist storage. Create it once with:  npx wrangler kv namespace create WAITLIST
+# then paste the id it prints here and uncomment.
+# [[kv_namespaces]]
+# binding = "WAITLIST"
+# id = "<id from the command above>"
+
+# Serve on the apex domain (chimpact.org must be a zone in this Cloudflare account). Uncomment to enable.
+# routes = [
+#   { pattern = "chimpact.org", custom_domain = true },
+#   { pattern = "www.chimpact.org", custom_domain = true }
+# ]

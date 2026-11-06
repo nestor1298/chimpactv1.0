@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chimpact · Aprende a cambiar el sistema, desde adentro</title>
+  <meta name="description" content="Chimpact es la plataforma en español para diseñar, ejecutar y aprender de iniciativas de impacto social con el framework Champion Impact: problemas, teoría de cambio, monitoreo y narrativa del cambio.">
+  <meta name="theme-color" content="#0E1F39">
+  <meta property="og:title" content="Chimpact · Aprende a cambiar el sistema, desde adentro">
+  <meta property="og:description" content="Cinco disciplinas para que tu iniciativa de impacto aprenda con el sistema que quiere cambiar.">
+  <meta property="og:image" content="/media/video-poster.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preload" as="image" href="/assets/field-poster.webp">
+</head>
+<body class="is-loading">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- Brand mark parts (authored brand geometry, from the Chimpact logo) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="p-base"><line x1="418" y1="472" x2="960" y2="472" stroke="#15D1B5" stroke-width="15" stroke-linecap="round"/></g>
+      <g id="p-curve"><path d="M418 440 C 520 440, 560 155, 689 155 C 818 155, 858 440, 960 440" fill="none" stroke="#15D1B5" stroke-width="14" stroke-linecap="round"/></g>
+      <g id="p-delta"><polygon points="689,232 591,440 787,440" fill="none" stroke="#FFFFFF" stroke-width="15"/></g>
+      <g id="p-bolt"><polygon points="800,150 655,352 712,345 628,515 775,300 716,308" fill="#0E1F39" stroke="#1A7DF2" stroke-width="6"/></g>
+      <g id="p-person"><circle cx="857" cy="258" r="27" fill="none" stroke="#FFFFFF" stroke-width="13"/><path d="M886 410 V322 L935 290 L952 242" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </defs>
+  </svg>
+
+  <div class="preloader" data-preloader aria-hidden="true">
+    <svg class="preloader__mark" viewBox="396 120 586 410" data-preloader-mark>
+      <line class="pl-draw" x1="418" y1="472" x2="960" y2="472" stroke="#15D1B5" stroke-width="15" stroke-linecap="round" pathLength="1"/>
+      <path class="pl-draw" d="M418 440 C 520 440, 560 155, 689 155 C 818 155, 858 440, 960 440" fill="none" stroke="#15D1B5" stroke-width="14" stroke-linecap="round" pathLength="1"/>
+    </svg>
+  </div>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="brand" href="#inicio" aria-label="Chimpact, inicio">
+        <svg class="brand__mark" viewBox="396 120 586 410" aria-hidden="true"><use href="#p-base"/><use href="#p-curve"/><use href="#p-delta"/><use href="#p-bolt"/><use href="#p-person"/></svg>
+        <span class="brand__word">CHIMPACT</span>
+      </a>
+      <nav class="nav__links" id="menu" aria-label="Principal">
+        <a href="#idea">La idea</a>
+        <a href="#disciplinas">Disciplinas</a>
+        <a href="#recorrido">Recorrido</a>
+        <a href="#productos">Para quién</a>
+        <a href="#video">Video</a>
+        <a class="btn btn--small" href="#acceso">Acceso anticipado</a>
+      </nav>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="nav__toggle-open"><i data-icon="hamburger-menu-linear"></i></span>
+        <span class="nav__toggle-close"><i data-icon="close-circle-linear"></i></span>
+        <span class="sr-only">Menú</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__field" aria-hidden="true">
+        <img class="hero__poster" src="/assets/field-poster.webp" alt="" width="1600" height="1000" fetchpriority="high">
+        <canvas class="hero__canvas" data-field></canvas>
+      </div>
+      <div class="wrap hero__inner">
+        <p class="kicker" data-hero-item>Framework Champion Impact · v2.0</p>
+        <h1 class="hero__title" id="hero-title" data-hero-title>Aprende a cambiar el sistema, desde adentro.</h1>
+        <p class="hero__dek" data-hero-item>Chimpact es la plataforma en español para diseñar, ejecutar y aprender de iniciativas de impacto: del árbol de problemas a la teoría de cambio, el monitoreo y la historia de lo que de verdad cambió.</p>
+        <div class="hero__ctas" data-hero-item>
+          <a class="btn" href="#acceso">Solicita acceso anticipado <i data-icon="arrow-right-linear"></i></a>
+          <a class="btn btn--ghost" href="#video"><i data-icon="play-circle-linear"></i> Ver el video · 1:40</a>
+        </div>
+        <p class="hero__hint" data-hero-item>Mueve el cursor sobre las curvas: el sistema responde, pero con retraso.</p>
+      </div>
+      <a class="hero__scroll" href="#idea" aria-label="Bajar a la idea central"><i data-icon="arrow-down-linear"></i></a>
+    </section>
+
+    <!-- MANIFIESTO -->
+    <section class="manifesto" id="idea" aria-labelledby="idea-title">
+      <div class="wrap">
+        <p class="kicker" data-reveal-item>La idea central</p>
+        <h2 class="manifesto__quote" id="idea-title" data-split-reveal>Un Champion no ejecuta un plan sobre un sistema. Aprende con el sistema, y cambia al mismo tiempo que lo cambia.</h2>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="problem" aria-labelledby="problem-title" data-story-section>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-reveal-item>Lo que el plan no ve</p>
+          <h2 id="problem-title" data-split-reveal>El cambio social no se mueve en línea recta.</h2>
+          <p class="lede" data-reveal-item>Los sistemas sociales están hechos de relaciones, calendarios y lealtades. Por eso responden de formas que ningún plan lineal anticipa.</p>
+        </div>
+        <ol class="problem__grid">
+          <li class="problem__item" data-reveal-item>
+            <span class="problem__icon"><i data-icon="hourglass-linear"></i></span>
+            <h3>Retrasos</h3>
+            <p>El efecto llega meses después de la causa. Si mides antes de tiempo, abandonas lo que sí estaba funcionando.</p>
+          </li>
+          <li class="problem__item" data-reveal-item>
+            <span class="problem__icon"><i data-icon="refresh-circle-linear"></i></span>
+            <h3>Resistencia</h3>
+            <p>Cada empuje provoca una respuesta que lo compensa. Más esfuerzo no siempre produce más resultado.</p>
+          </li>
+          <li class="problem__item" data-reveal-item>
+            <span class="problem__icon"><i data-icon="undo-left-round-linear"></i></span>
+            <h3>Efectos contrarios</h3>
+            <p>La solución obvia alivia hoy y empeora mañana: la ayuda que desplaza al productor local, el servicio que sustituye la capacidad propia.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DISCIPLINAS -->
+    <section class="disciplines" id="disciplinas" aria-labelledby="disc-title">
+      <div class="wrap">
+        <div class="section-head" data-story-section>
+          <p class="kicker" data-reveal-item>Cinco disciplinas</p>
+          <h2 id="disc-title" data-split-reveal>Cada elemento de la marca es una forma de aprender.</h2>
+          <p class="lede" data-reveal-item>Champion Impact integra la Teoría de Cambio, el liderazgo de movimientos de Marshall Ganz, el monitoreo participativo y las cinco disciplinas de Peter Senge. Cada disciplina tiene su marca.</p>
+        </div>
+        <div class="stack" data-sticky-stack>
+          <article class="disc-card" data-stack-card>
+            <div class="disc-card__mark"><svg viewBox="775 204 240 240" role="img" aria-label="Marca de dominio personal: la persona"><use href="#p-person"/></svg></div>
+            <div class="disc-card__body">
+              <p class="disc-card__meta">01 · Persona · Base Camp</p>
+              <h3>Dominio personal</h3>
+              <p>Todo empieza contigo: saber qué quieres crear y mirar tu realidad sin autoengaño. La Brújula del Champion se firma, se fecha y se revisa en cada ciclo.</p>
+            </div>
+          </article>
+          <article class="disc-card" data-stack-card>
+            <div class="disc-card__mark"><svg viewBox="396 120 586 410" role="img" aria-label="Marca de modelos mentales: la curva normal"><use href="#p-base"/><use href="#p-curve"/></svg></div>
+            <div class="disc-card__body">
+              <p class="disc-card__meta">02 · Curva · The Blueprint</p>
+              <h3>Modelos mentales</h3>
+              <p>Tus supuestos son hipótesis. Cada uno se escribe, lleva su prueba y declara qué cambia en el diseño si resulta falso.</p>
+            </div>
+          </article>
+          <article class="disc-card" data-stack-card>
+            <div class="disc-card__mark"><svg viewBox="396 120 586 410" role="img" aria-label="Marca de visión compartida: curva y persona"><use href="#p-base"/><use href="#p-curve"/><use href="#p-person"/></svg></div>
+            <div class="disc-card__body">
+              <p class="disc-card__meta">03 · Curva + persona · Safari Strategy</p>
+              <h3>Visión compartida</h3>
+              <p>Un futuro que la gente sostiene porque es suyo. La escalera de compromiso distingue a quien asiste de quien se compromete cuando cuesta.</p>
+            </div>
+          </article>
+          <article class="disc-card" data-stack-card>
+            <div class="disc-card__mark"><svg viewBox="396 120 586 410" role="img" aria-label="Marca de aprendizaje en equipo: curva, persona y rayo"><use href="#p-base"/><use href="#p-curve"/><use href="#p-bolt"/><use href="#p-person"/></svg></div>
+            <div class="disc-card__body">
+              <p class="disc-card__meta">04 · Curva + persona + rayo · The Harvest</p>
+              <h3>Aprendizaje en equipo</h3>
+              <p>Primero dialogar para entender, después decidir con evidencia. Las retrospectivas tienen formato, quedan escritas y cambian algo.</p>
+            </div>
+          </article>
+          <article class="disc-card" data-stack-card>
+            <div class="disc-card__mark"><svg viewBox="396 120 586 410" role="img" aria-label="Marca de pensamiento sistémico: curva y delta"><use href="#p-base"/><use href="#p-curve"/><use href="#p-delta"/></svg></div>
+            <div class="disc-card__body">
+              <p class="disc-card__meta">05 · Curva + delta · Capa transversal</p>
+              <h3>Pensamiento sistémico</h3>
+              <p>Bucles y retrasos en lugar de culpables. Los arquetipos te ayudan a reconocer el patrón y a encontrar dónde una acción pequeña cambia mucho.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECORRIDO -->
+    <section class="journey" id="recorrido" aria-labelledby="journey-title" data-journey>
+      <div class="wrap journey__inner">
+        <div class="journey__visual" aria-hidden="true">
+          <svg class="journey__spiral" viewBox="0 0 400 400" data-spiral>
+            <path class="journey__track" data-spiral-track></path>
+            <path class="journey__progress" data-spiral-progress></path>
+            <g data-spiral-nodes></g>
+          </svg>
+        </div>
+        <div class="journey__copy">
+          <div class="section-head" data-story-section>
+            <p class="kicker" data-reveal-item>El recorrido</p>
+            <h2 id="journey-title" data-split-reveal>Una espiral, no una ruta.</h2>
+            <p class="lede" data-reveal-item>Cinco módulos y nueve sesiones, a tu ritmo. Cada ciclo se cierra sembrando el siguiente, con evidencia nueva.</p>
+          </div>
+          <ol class="modules">
+            <li class="module" data-module>
+              <span class="module__n">0</span>
+              <div><h3>Base Camp <small>Of the Inner Compass</small></h3><p>Tu brújula: visión personal, realidad actual y la pregunta que vuelve en cada retrospectiva: ¿qué estoy evitando ver?</p></div>
+            </li>
+            <li class="module" data-module>
+              <span class="module__n">1</span>
+              <div><h3>Jungle Explorer <small>Unearthing the Roots</small></h3><p>Árbol de problemas, mapa de bucles y el arquetipo que hoy domina tu sistema.</p></div>
+            </li>
+            <li class="module" data-module>
+              <span class="module__n">2</span>
+              <div><h3>The Blueprint <small>Of the Canopy</small></h3><p>Árbol de objetivos y teoría de cambio con un registro de supuestos vivos.</p></div>
+            </li>
+            <li class="module" data-module>
+              <span class="module__n">3</span>
+              <div><h3>Safari Strategy <small>March of the Impact</small></h3><p>Ideas rectoras, escalera de compromiso, mapa de actores, línea base e indicadores.</p></div>
+            </li>
+            <li class="module" data-module>
+              <span class="module__n">4</span>
+              <div><h3>The Harvest <small>Of Change</small></h3><p>Monitoreo, evaluación y retrospectivas. El ciclo cierra con las semillas del siguiente.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="film" id="video" aria-labelledby="film-title" data-story-section>
+      <div class="wrap">
+        <div class="section-head section-head--center">
+          <p class="kicker" data-reveal-item>En 1:40</p>
+          <h2 id="film-title" data-split-reveal>Las cinco disciplinas, en movimiento.</h2>
+        </div>
+        <figure class="film__frame" data-reveal-item>
+          <video controls preload="none" playsinline poster="/media/video-poster.jpg" width="1920" height="1080">
+            <source src="/media/chimpact-cinco-disciplinas.mp4" type="video/mp4">
+            Tu navegador no reproduce video. <a href="/media/chimpact-cinco-disciplinas.mp4">Descarga el video</a>.
+          </video>
+          <figcaption>Narración en español con subtítulos integrados: se entiende también sin sonido.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="products" id="productos" aria-labelledby="products-title" data-story-section>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-reveal-item>Para quién</p>
+          <h2 id="products-title" data-split-reveal>Una persona aprende. Una organización practica.</h2>
+          <p class="lede" data-reveal-item>El dominio personal y los modelos mentales se entrenan de forma individual. La visión compartida y el aprendizaje en equipo solo existen en colectivo. Por eso Chimpact tiene dos productos sobre el mismo grafo de impacto.</p>
+        </div>
+        <div class="products__grid">
+          <article class="product" data-reveal-item>
+            <span class="product__icon"><i data-icon="user-linear"></i></span>
+            <p class="product__eyebrow">Para Champions</p>
+            <h3>Chimpact Aprende</h3>
+            <p>Formación y certificación individual en el framework Champion Impact.</p>
+            <ul class="checks">
+              <li><i data-icon="check-circle-linear"></i>Base Camp y Jungle Explorer, gratis</li>
+              <li><i data-icon="check-circle-linear"></i>Herramientas para tu propio proyecto en cada módulo</li>
+              <li><i data-icon="check-circle-linear"></i>Certificación Champion por ciclos cerrados</li>
+            </ul>
+          </article>
+          <article class="product product--suite" data-reveal-item>
+            <span class="product__icon"><i data-icon="users-group-rounded-linear"></i></span>
+            <p class="product__eyebrow">Para organizaciones y gobiernos</p>
+            <h3>Chimpact Suite</h3>
+            <p>La infraestructura para que un equipo aprenda junto, no solo que cada persona tome un curso.</p>
+            <ul class="checks">
+              <li><i data-icon="check-circle-linear"></i>Registro de supuestos vivos compartido</li>
+              <li><i data-icon="check-circle-linear"></i>Retrospectivas con formato e historial legible</li>
+              <li><i data-icon="check-circle-linear"></i>Mapa de actores, indicadores y retrasos esperados</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPIOS -->
+    <section class="principles" aria-labelledby="principles-title" data-story-section>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-reveal-item>Lo que no vamos a hacer</p>
+          <h2 id="principles-title" data-split-reveal>Reconocemos el trabajo incómodo, no el completar.</h2>
+        </div>
+        <ul class="principles__list">
+          <li data-reveal-item><strong>Sin rankings entre organizaciones.</strong> Competir por el mismo territorio es justo el arquetipo de escalada que el framework enseña a evitar.</li>
+          <li data-reveal-item><strong>Sin rachas diarias.</strong> Un Champion tiene una o dos horas por semana. El progreso se ve como una espiral de ciclos, no como una barra.</li>
+          <li data-reveal-item><strong>Sin premios por declarar éxito.</strong> Lo que se celebra es un supuesto refutado, un retraso descubierto, un hecho incómodo escrito.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ACCESO -->
+    <section class="access" id="acceso" aria-labelledby="access-title">
+      <div class="wrap access__inner" data-story-section>
+        <div>
+          <p class="kicker" data-reveal-item>Acceso anticipado</p>
+          <h2 id="access-title" data-split-reveal>Empieza por tu brújula.</h2>
+          <p class="lede" data-reveal-item>Déjanos tu correo y te escribimos cuando abramos Base Camp para tu perfil.</p>
+        </div>
+        <form class="form" data-waitlist novalidate data-reveal-item>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required inputmode="email" aria-describedby="email-error">
+            <p class="field__error" id="email-error" hidden><i data-icon="danger-circle-linear"></i>Escribe un correo válido, por ejemplo nombre@dominio.org.</p>
+          </div>
+          <fieldset class="field">
+            <legend>Te registras como</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="perfil" value="champion" checked><span>Champion</span></label>
+              <label class="chip"><input type="radio" name="perfil" value="organizacion"><span>Organización</span></label>
+              <label class="chip"><input type="radio" name="perfil" value="gobierno"><span>Gobierno</span></label>
+            </div>
+          </fieldset>
+          <button class="btn btn--block" type="submit" data-submit><span data-submit-label>Quiero acceso</span> <i data-icon="arrow-right-linear"></i></button>
+          <p class="form__status" role="status" aria-live="polite" data-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-footer-parallax>
+    <div class="wrap footer__inner">
+      <a class="brand brand--footer" href="#inicio" aria-label="Chimpact, volver al inicio">
+        <svg class="brand__mark" viewBox="396 120 586 410" aria-hidden="true"><use href="#p-base"/><use href="#p-curve"/><use href="#p-delta"/><use href="#p-bolt"/><use href="#p-person"/></svg>
+        <span class="brand__word">CHIMPACT</span>
+      </a>
+      <p class="footer__tag">Aprende a cambiar el sistema, desde adentro.</p>
+      <nav class="footer__nav" aria-label="Pie de página">
+        <a href="#idea">La idea</a><a href="#disciplinas">Disciplinas</a><a href="#recorrido">Recorrido</a><a href="#productos">Para quién</a><a href="#acceso">Acceso anticipado</a>
+      </nav>
+      <p class="footer__legal">© 2026 Chimpact · chimpact.org</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
