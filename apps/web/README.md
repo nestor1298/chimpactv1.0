@@ -11,13 +11,9 @@ Necesitas Node 18 o superior y una cuenta de Cloudflare donde `chimpact.org` est
 ```bash
 npm install
 npx wrangler login                          # abre el navegador para autorizar
-npx wrangler kv namespace create WAITLIST   # copia el id que imprime
 ```
 
-En `wrangler.toml`:
-
-1. Descomenta el bloque `[[kv_namespaces]]` y pega el id.
-2. Descomenta `routes` para servir en `chimpact.org` y `www.chimpact.org`.
+`wrangler.toml` ya tiene el namespace KV `WAITLIST` y las rutas de `chimpact.org` y `www.chimpact.org`.
 
 Después:
 
@@ -25,7 +21,6 @@ Después:
 npm run deploy                              # vite build + wrangler deploy
 ```
 
-Sin dominio, el sitio queda en `https://chimpact.<tu-subdominio>.workers.dev`.
 
 ## Ver los registros de la lista de espera
 

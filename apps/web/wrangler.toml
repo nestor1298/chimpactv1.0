@@ -8,11 +8,10 @@ directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
 
-# Waitlist storage. Create it once with:  npx wrangler kv namespace create WAITLIST
-# then paste the id it prints here and uncomment.
-# [[kv_namespaces]]
-# binding = "WAITLIST"
-# id = "<id from the command above>"
+# Waitlist storage (KV namespace WAITLIST).
+[[kv_namespaces]]
+binding = "WAITLIST"
+id = "ac5dd8c828c641a39573c5d89c4b9ab0"
 
 # Served on chimpact.org and www.chimpact.org (zone in this Cloudflare account).
 routes = [
