@@ -1,5 +1,5 @@
 # chimpact.org on Cloudflare Workers (static assets + one API route)
-name = "chimpact-site"
+name = "chimpact"
 main = "worker/index.js"
 compatibility_date = "2024-11-01"
 

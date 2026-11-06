@@ -25,7 +25,7 @@ Después:
 npm run deploy                              # vite build + wrangler deploy
 ```
 
-Sin dominio, el sitio queda en `https://chimpact-site.<tu-subdominio>.workers.dev`.
+Sin dominio, el sitio queda en `https://chimpact.<tu-subdominio>.workers.dev`.
 
 ## Ver los registros de la lista de espera
 
