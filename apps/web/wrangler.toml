@@ -3,6 +3,13 @@ name = "chimpact"
 main = "worker/index.js"
 compatibility_date = "2024-11-01"
 
+# Served on chimpact.org and www.chimpact.org (zone in this Cloudflare account).
+# Top-level key: it must stay above every [table] and [[array table]] below.
+routes = [
+  { pattern = "chimpact.org", custom_domain = true },
+  { pattern = "www.chimpact.org", custom_domain = true }
+]
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"
@@ -12,9 +19,3 @@ not_found_handling = "single-page-application"
 [[kv_namespaces]]
 binding = "WAITLIST"
 id = "ac5dd8c828c641a39573c5d89c4b9ab0"
-
-# Served on chimpact.org and www.chimpact.org (zone in this Cloudflare account).
-routes = [
-  { pattern = "chimpact.org", custom_domain = true },
-  { pattern = "www.chimpact.org", custom_domain = true }
-]
